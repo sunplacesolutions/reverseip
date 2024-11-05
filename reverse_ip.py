@@ -16,7 +16,7 @@ BANNER = f"""
 ██╔══██╗██╔══╝  ╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██╔══╝      ██║██╔═══╝ 
 ██║  ██║███████╗ ╚████╔╝ ███████╗██║  ██║███████║███████╗    ██║██║     
 ╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝    ╚═╝╚═╝     
-             	Idea de MrVip by SunplaceSolutions                     
+             	Greets - DDLR - RemoteExecution - Xsec By SunplaceSolutions                     
 
 {Style.RESET_ALL}
 """
