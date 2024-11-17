@@ -63,9 +63,12 @@ def get_domains_from_yougetsignal(ip_address):
 # Módulo para obtener el estado HTTP y tipo de CMS
 def get_http_status_and_cms(domain):
     """Obtiene el código de estado HTTP y detecta el CMS o tecnología del sitio."""
-    url = f"http://{domain}"  # Intentar con http, podría adaptarse a https si es necesario
+    url = f"https://{domain}"  # Intentar con https
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+    }
     try:
-        response = requests.head(url, timeout=5)  # Solicitud HEAD para obtener solo el encabezado
+        response = requests.get(url, headers=headers, timeout=5, allow_redirects=True)  # Usar GET con redirecciones
         status_code = response.status_code
 
         # Detección básica de CMS por encabezados o contenido
